@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Need to edit below  %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% Title, Subtitle, and Author(s)     %%%%%%%%%%%%%%
+% Definition of \maketitle
+\title{Daily Writing}
+\subtitle{Everything included}
+\author{Your Name}
+% \subtitle{-- Monograph --}
+\makeatletter         
+\def\@maketitle{
+\begin{center}
+{\Huge \bfseries \sffamily \@title }\\[4ex] 
+{\Large \bfseries \sffamily \@subtitle }\\[4ex] 
+{\Large  \@author}\\[4ex] 
+\@date\\[8ex]
+\vspace{1cm}
+\includegraphics[width = 150mm]{./Content/Figures/scatter2.png}
+\end{center}}
+\makeatother
+
+%%%%% Begin document here %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\newpage
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{dedic}
+\include{./Content/Preface}
+\tableofcontents
+\listoffigures
+\listoftables
+\printglossary[type=\acronymtype]
+\renewcommand\listoflistingscaption{List of source codes}
+\listoflistings
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Set the chapter counter so that the first chapter is counted as Chapter 1.
+
+\part{2022}
+\setcounter{chapter}{0}
+\input{./Content/January/January2022}
+\input{./Content/February/February2022}
+\input{./Content/March/March2022}
+\input{./Content/April/April2022}
+\input{./Content/May/May2022}
+\input{./Content/June/June2022}
+\input{./Content/July/July2022}
+\input{./Content/August/August2022}
+\input{./Content/September/September2022}
+\input{./Content/October/October2022}
+\input{./Content/November/November2022}
+\input{./Content/December/December2022}
+
+\part{Appendices}
+\appendix
+\input{./Content/ChDeadlines2022}
+%\input{./Content/ChAccomplishments2022}
+% \input{./Content/ChAccomplishments2021}
+% \input{./Content/ChAccomplishments2020}
+%\input{./Content/ChAnnualPlan2022}
+% \input{./Content/ChAnnualPlan2021}
+% \input{./Content/ChAnnualPlan2020}
+% \input{./Content/ChBookReviews}
+% \input{./Content/ChBSCOKCLBSFoutreach}
+% \input{./Content/ChGiftIdeas}
+% \input{./Content/ChGrantDeadlines}
+% \input{./Content/ChImprovingGraduateEducation}
+% \input{./Content/ChMeetingDeadlines}
+% \input{./Content/ChMyBiographies} 
+% \input{./Content/ChPublicationHeirarchy}
+% \input{./Content/ChPythonSelfStudy}
+% \input{./Content/ChPythonWorkshop}
+% \input{./Content/ChReadingLists}
+% \input{./Content/ChSCUGtalks}
+% \input{./Content/ChToBeDone}
+\part{Backmatter}
+\backmatter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{global}
+% listofauthors must come before index
+%\listofauthors
+\printindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
