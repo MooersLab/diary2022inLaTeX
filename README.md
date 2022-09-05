@@ -126,14 +126,14 @@ If you have citations, you will have to run bibtex on main.tex.
 
 ## Best of both worlds: use local editor to edit today entry on Overleaf
 
-The Google Chrome extension supports the use of several kinds of local editors to edit text areas in web browsers.
+The Google Chrome extension [GhostText](https://ghosttext.fregante.com/) supports the use of several kinds of local editors to edit text areas in web browsers.
 The opened *toadayDate.tex* file is a text area in Overleaf.
 You can bring you favorite LaTeX snippets to bear on Overleaf, which does not support snippets directly.
 
 For example, I start the day by opening Emacs, logging into 750words, and clicking on the GhostText icon to open the connection to Emacs.
 In Emacs in the **Write your words** buffer, I enter `start` and hit `TAB` or `C-o`. 
 This action inserts the following boilerplate from the `start` snippet file, which is available above.
-I have [configured](https://github.com/MooersLab/latex-emacs) the Emacs package atomic-chrome to open `Write your words` in the latex-mode so that I can have access to my latex-mode snippets, which are available [here](https://github.com/MooersLab/snippet-latex-mode).
+I have [configured](https://github.com/MooersLab/latex-emacs) the Emacs package [atomic-chrome](https://github.com/alpha22jp/atomic-chrome) to open `Write your words` in the latex-mode so that I can have access to my latex-mode snippets, which are available [here](https://github.com/MooersLab/snippet-latex-mode).
 
 ```latex
 \subsection{Last night}
@@ -162,13 +162,13 @@ change me
 
 ```
 
-The cursor advances to *change me* under *Last night*.
+The cursor advances to `change me` under *Last night*.
 I make some notes about what I did.
-Then I hit tab to advance to the next change me to make notes about the morning.
-I hit tab again to advance to the first item in my todo list for the day.
+Then I hit tab to advance to the next `change me` to make notes about the morning.
+I hit tab again to advance to the first item in my TODO list for the day.
 When I reach the bottom of the list, I enter `C-c C-j` to enter the next **\item** properly aligned and with the cursor in the right postion.
 
-A script inside the yasnippet snippet called start inserts the correct date in the index key.
+A called to a macro inside the yasnippet snippet called *start* inserts the correct date in the index key.
 I create an index key without lifting a finger.
 **See, Life can be Good in Emacs!**
 
