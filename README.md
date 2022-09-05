@@ -67,11 +67,13 @@ I debug the old writing occassionally during the year when too tired to do anyth
 
 ## Compiling
 
-Compile with lualatex and the -escape-shell key (for the minted package).
+Compile with lualatex and the `-escape-shell` key (for the minted package).
 The compile.sh script is run in the top level of the folder `2023diary`, which you can rename.
 The document is easy to compile with the click of a button using the Overleaf website.
 The empty shell document takes several seconds to compile.
-A 1000 page document will compile in under 60 seconds.
+A 1000-page document will compile in under 60 seconds.
+This is another advantage of the modular approach as opposed to having everything in one tex file.
+I can comment out the inactive months to shorten the compile time.
 
 ## Configuration
 
@@ -158,7 +160,6 @@ change me
 \item change me
 \item change me
 \end{itemize}
-% 0
 
 ```
 
