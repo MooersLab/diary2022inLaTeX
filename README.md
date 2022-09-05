@@ -71,15 +71,24 @@ Compile with lualatex and the `-escape-shell` key (for the minted package).
 The compile.sh script is run in the top level of the folder `2023diary`, which you can rename.
 The document is easy to compile with the click of a button using the Overleaf website.
 The empty shell document takes several seconds to compile.
-A 1000-page document will compile in under 60 seconds.
-This is another advantage of the modular approach as opposed to having everything in one tex file.
-I can comment out the inactive months to shorten the compile time.
+A 1000-page document will compile in about 60 seconds.
+
+This long compile time is another advantage of the modular approach as opposed to having everything in one tex file.
+I comment out the inactive months in the *0AAAContents.tex* file to shorten the compile time to a few seconds.
+
+## Role of the 0AAAContents.tex file.
+
+The *0AAAContents.tex* file is the cental nervous system of the document.
+It is trival to comment out entire chapters via a single percent sign.
+It is also trival in Emacs to shuffle the order of the chapters by moving lines up or down.
+You can add prose to the *0AAAContents.tex* file, but I find it adds clutter to this file.
 
 ## Configuration
 
 - Edit the title and author at the top of the A000Contents.tex file in the Content subfolder.
 - Change the cover figure to suit by loading a new image into the ./Content/Figures subfolder and by editing the path to the image to specify this new figure. Some image file formats like tiff are not supported. Png  and PDF are reliable.
 - Comment out the lists that you do not intend to use in 0AAAContent. For example, if you do not save computer code, the list of listings will not be used.
+- A your new appendices like your annual plan to the Appendix as a tex file.
 
 ## Daily use
 
