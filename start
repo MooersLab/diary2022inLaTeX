@@ -1,0 +1,29 @@
+# contributor: Blaine Mooers bmooers1@gmail.com
+# group: itemizedList
+# key: start
+# name: This is an unnumbered list for today's To Be Dones
+# --
+
+\subsection{Last night}
+${1:change me}
+
+
+\subsection{This morning}
+${2:change me}
+
+
+\subsection{To Be Done Today}
+\index{To Be Done!`(format-time-string "%Y-%m-%d")`}
+\begin{itemize}
+\item ${3:change me}
+\item ${4:change me}
+\item ${5:change me}
+\item ${6:change me}
+\item ${7:change me}
+\item ${8:change me}
+\item ${9:change me}
+\item ${10:change me}
+\item ${11:change me}
+\item ${12:change me}
+\end{itemize}
+%0
