@@ -67,6 +67,8 @@ I debug the old writing occassionally during the year when too tired to do anyth
 
 ## Compiling
 
+The *main.tex* document is feed to the compiler.
+
 Compile with lualatex and the `-escape-shell` key (for the minted package).
 The compile.sh script is run in the top level of the folder `2023diary`, which you can rename.
 The document is easy to compile with the click of a button using the Overleaf website.
@@ -108,6 +110,9 @@ I have been editing this document on Overleaf for six years.
 You do NOT have to run each of the steps of compiling separately.
 You just click a button and the latex and bibtex compilers are run seemlessly.
 I store the URL for this project in my private home page for rapid access.
+
+You can compile the entire document with any document open in the tex area because the main document is set in a the menu panel on the left.
+This meanu is also where you configure the compiler, key bindings, color theme, and so on.
 
 ## Local editors
 
