@@ -117,7 +117,7 @@ This menu is also where you configure the compiler, key bindings, color theme, a
 
 ## Local editors
 
-For local editing, many text editors (>20) support editing documents in LaTeX.
+For local editing, many [text editors](https://mooerslab.github.io/pymolsnips/#editors) (>20) support editing documents in LaTeX.
 The following are perhaps the most popular general purpose editors that have great support for LaTeX:
 
 - TextMate for the Mac (very easy to compile with `cmd-R`)
