@@ -4,7 +4,7 @@
 
 # Diary for 2022 in LaTeX
 
-Go to this [site](https://github.com/MooersLab/diary2024inLaTeX) for 2024 version of this diary.
+Go to this [site](https://github.com/MooersLab/diary2024inLaTeX) for the 2024 version of this diary.
 
 ## What is this?
 
