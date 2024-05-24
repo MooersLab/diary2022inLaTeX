@@ -1,3 +1,7 @@
+![Version](https://img.shields.io/static/v1?label=diary2022inLaTeX&message=0.2&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 # Diary for 2022 in LaTeX
 
 ## What is this?
@@ -5,7 +9,7 @@
 This repo contains a template book with 365 blank tex files, one for each day of the year.
 These tex files are collated and rendered into a PDF with latex and bibtex compilers. 
 I set up the files for 2022.
-I configured the files to automatically generate the following:
+I configured the files to generate the following automatically:
 
 - Chapter headings and section headings (add subsections and lower in your daily writing).
 - Chapters and sections are automatically numbered.
@@ -43,7 +47,7 @@ The last use stimulated this document's design.
 I wanted an independent place to store my daily writing on [750words.com](https://750words.com), where it is stored in plain text files that are hard to search.
 I wanted that writing to be indexable and searchable in a single PDF for a calendar year rather than in 365 files.
 This document has been useful for finding information, including data wrangling protocols and computer code, that I used in the past.
-If you use this template as a *Captian's log'* of your *Enterprise*, you can gather information for annual reports.
+You can gather information for annual reports using this template as a *Captian's log'* of your *Enterprise*.
 For example, you can store lists of accomplishments in the Appendices.
 
 ## Prior Experience
@@ -56,7 +60,7 @@ It is part of my daily routine to paste the day's writing into this document bef
 
 Writing in LaTeX has some limitations:
 
-- I found that computer RAM limited by document to one year. 
+- I found that computer RAM is limited by the document to one year. 
 - RAM also limits the number of lists and indices that can be used.
 - Debugging can sometimes involve commenting out chapters in the 0AAAContent document to isolate the error. 
 
@@ -71,10 +75,10 @@ I debug the old writing occasionally during the year when too tired to do anythi
 The *main.tex* document is fed to the compiler.
 
 Compile with lualatex and the `-escape-shell` key (for the minted package).
-The compile.sh script is run in the top level of the folder `2023diary`, which you can rename.
+The compile.sh script runs at the top level of the folder `2023diary`, which you can rename.
 The document is easy to compile with the click of a button using the Overleaf website.
 The empty shell document takes several seconds to compile.
-A 1000-page document will compile in about 60 seconds.
+A 1000-page document will be compiled in about 60 seconds.
 
 This long compile time is another advantage of the modular approach instead of having everything in one tex file.
 I comment out the inactive months in the *0AAAContents.tex* file to shorten the compile time to a few seconds.
@@ -90,7 +94,7 @@ You can add prose to the *0AAAContents.tex* file, but I find it adds clutter to 
 
 - Edit the title and author at the top of the A000Contents.tex file in the Content subfolder.
 - Change the cover figure to suit by loading a new image into the ./Content/Figures subfolder and editing the image's path to specify this new figure. Some image file formats like tiff are not supported. PNG  and PDF are reliable.
-- Comment out in 0AAAContent the lists that you do not intend to use . For example, if you do not save computer code, the list of listings will not be used.
+- Comment out in 0AAAContent the lists you do not intend to use. For example, if you do not save computer code, the list of listings will not be used.
 - Add your new appendices, like your annual plan, to the Appendix as a tex file.
 
 ## Daily use
@@ -118,7 +122,7 @@ This menu is also where you configure the compiler, key bindings, color theme, a
 ## Local editors
 
 For local editing, many [text editors](https://mooerslab.github.io/pymolsnips/#editors) (>20) support editing documents in LaTeX.
-The following are perhaps the most popular general purpose editors that have great support for LaTeX:
+The following are perhaps the most popular general-purpose editors that have great support for LaTeX:
 
 - TextMate for the Mac (very easy to compile with `cmd-R`)
 - Sublime Text
@@ -129,7 +133,7 @@ The following are perhaps the most popular general purpose editors that have gre
 
 TextMate for the Mac does not get enough love these days.
 It starts lightning fast.
-It is still the editor that I open most frequently, although I am trying to migrate to Emacs.
+I open the editor most frequently, although I am trying to migrate to Emacs.
 
 Emacs is the most configurable editor, thanks to elisp and a dedicated developer community.
 
@@ -185,14 +189,14 @@ Then I hit tab to advance to the next `change me` to make notes about the mornin
 I hit tab again to advance to the first item in my TODO list for the day.
 When I reach the bottom of the list, I enter `C-c C-j` to enter the next **\item** aligned and with the cursor in the correct position.
 
-A called to a macro inside the yasnippet snippet called *start* inserts the correct date in the index key.
+A call to a macro inside the yasnippet snippet called *start* inserts the correct date in the index key.
 I create an index key without lifting a finger.
 **See, Life can be Good in Emacs!**
 
 See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for the application of GhostText to LaTeX editing with Emacs.
 For Jupyter users, you can likewise use GhostText to edit code and markdown cells with your favorite editor.
 See [slideshow](https://github.com/MooersLab/DSW22ghosttext) about this exciting topic.
-See corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
+See the corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
 
 ## Related projects of possible interest
 
@@ -208,3 +212,17 @@ See corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/python/w
 - [Slides from talk about GhostText, Data Science Workshop, July 2022](https://github.com/MooersLab/DSW22ghosttext)
 - [Video link to talk about GhostText, Data Science Workshop, July 2022](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d)
 - [The writer's law](https://github.com/MooersLab/thewriterslaw)
+
+## Update history
+
+|Version      | Changes                                                                                                                                                                         | Date                 |
+|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
+| Version 0.2 |   Added badges, funding, and update table.                                                                                                                  | 2024 May 24         |
+
+## Sources of funding
+
+- NIH: R01 CA242845
+- NIH: R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel)
+- NIH: P20 GM103640 and P30 GM145423 (PI: A. West)
+
