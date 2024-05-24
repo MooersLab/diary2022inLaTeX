@@ -4,6 +4,8 @@
 
 # Diary for 2022 in LaTeX
 
+Go to this [site](https://github.com/MooersLab/diary2024inLaTeX) for 2024 version of this diary.
+
 ## What is this?
 
 This repo contains a template book with 365 blank tex files, one for each day of the year.
@@ -19,15 +21,15 @@ I configured the files to generate the following automatically:
 - Lists of code listings, hyperlinked
 - List of Figures, hyperlinked
 - List of Tables, hyperlinked
-- An appendix that uses chapters arranged in alphabetical order by letters instead of numbers.
+- An appendix that uses chapters arranged alphabetically by letters instead of by numbers.
 - Page numbers
 - Epigraphs for Chapter header pages
 - URLs in footnotes to prevent them from running into the right margin.
 - Syntax highlighting of code via the minted package
-- Supports the use of equations with captions (i.e., makes it is possible to generate lists of equations).
+- Supports using equations with captions by putting them in floats (i.e., enables generation of lists of equations).
 
 
-I based the document on the Springer book format, but it has a 7- by 9 -inch area for writing with conservative margins to save paper. 
+I based the document on the Springer book format, but it has a 7- by 9-inch area for writing with conservative margins to save paper. 
 You can change the text area to suit your tastes and needs.
 
 
@@ -101,7 +103,7 @@ You can add prose to the *0AAAContents.tex* file, but I find it adds clutter to 
 
 The documents to be edited are in chapter subfolders in the Content subfolders.
 Each day's entry is in a separate tex file.
-Navigate to the file corresponding to the current date and start writing on line two.
+Navigate to the file corresponding to the current date and write on line two.
 The code on the first line must remain in place for the document to compile.
 
 Each file forms a section of a chapter.
@@ -133,14 +135,14 @@ The following are perhaps the most popular general-purpose editors that have gre
 
 TextMate for the Mac does not get enough love these days.
 It starts lightning fast.
-I open the editor most frequently, although I am trying to migrate to Emacs.
+I often open the editor, although I am trying to migrate to Emacs.
 
 Emacs is the most configurable editor, thanks to elisp and a dedicated developer community.
 
 ### Emacs
 
 Must be configured to use laulatex and -escape-shell. 
-It might be easiest to call the shell with `M-!` and enter `compile.sh main.tex` to compile and open in you default PDF viewer.
+It might be easiest to call the shell with `M-!` and enter `compile.sh, main.tex` to compile and open in your default PDF viewer.
 Or just run the compile.sh script externally to Emacs.
 
 See the `latex-emacs` repo for a sample configuration.
@@ -193,7 +195,7 @@ A call to a macro inside the yasnippet snippet called *start* inserts the correc
 I create an index key without lifting a finger.
 **See, Life can be Good in Emacs!**
 
-See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for the application of GhostText to LaTeX editing with Emacs.
+See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for applying GhostText to LaTeX editing with Emacs.
 For Jupyter users, you can likewise use GhostText to edit code and markdown cells with your favorite editor.
 See [slideshow](https://github.com/MooersLab/DSW22ghosttext) about this exciting topic.
 See the corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
@@ -215,9 +217,9 @@ See the corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/pyth
 
 ## Update history
 
-|Version      | Changes                                                                                                                                                                         | Date                 |
+|Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
-| Version 0.2 |   Added badges, funding, and update table.                                                                                                                  | 2024 May 24         |
+| Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 24         |
 
 ## Sources of funding
 
